@@ -8,7 +8,7 @@ VALUES ('Eva Stan', 'evast@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBID
 ('Second Last', 'secondLast@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.'),
 ('Last User', 'LastUser@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.');
 
-INSERT INTO properties (owner_id, title, description, thumbnail_photo_url, cover_photo_url, cost_per_night, parking_spaces, number_of_bathrooms, number_of_bedrooms, country, street, city, province, postal_code)
+INSERT INTO properties (owner_id, title, description, thumbnail_photo_url, cover_photo_url, cost_per_night, parking_spaces, number_of_bathrooms, number_of_bedrooms, country, street, city, province, post_code)
 VALUES (1, 'Speed lamp', 'description', 'thumbnail 1','cover 1', 960, 2, 2, 3, 'Canada', 'Mac Street', 'Arkham', 'Alberta', 'M9L6S6'),
 (1,'Snow White', 'description', 'thumbnail 2','cover 2', 440, 0, 1, 2, 'Canada', 'WFH Street', 'Thorncliff', 'Nova Scotia', 'M1L4K5'),
 (2, 'New Flash', 'description', 'thumbnail 3','cover 3', 30, 0, 1, 1, 'Canada', 'Couch Street', 'Richmond Mountain', 'Quebec', 'L9O0W9'),
