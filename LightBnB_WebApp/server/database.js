@@ -22,12 +22,9 @@ const getUserWithEmail = function(email) {
   FROM users
   WHERE email = $1`, [email])
   .then(res => {
-    // console.log(user);
-    // console.log('Succeed!')
     return user = res.rows[0];
   })
   .catch( e => {
-    // console.log('Failed!')
     return user = null;
   })
   
@@ -46,11 +43,9 @@ const getUserWithId = function(id) {
   FROM users
   WHERE id = $1`, [id])
   .then(res => {
-    // console.log('1')
     return user = res.rows[0];
   })
   .catch( e => {
-    // console.log('2')
     return user = null;
   })
   
@@ -145,7 +140,6 @@ const getAllProperties = function(options, limit = 10) {
     ORDER BY cost_per_night
     LIMIT $${queryParams.length};
   `;}
-  console.log(queryString, queryParams)
   return pool.query(queryString, queryParams)
   .then(res => {
     return res.rows;
@@ -183,7 +177,6 @@ const addProperty = function(property) {
   ($1::integer, $2::VARCHAR(255), $3::VARCHAR(255), $4::VARCHAR(255), $5::VARCHAR(255), $6::integer, $7::integer, $8::integer, $9::integer, $10::VARCHAR(255), $11::VARCHAR(255), $12::VARCHAR(255), $13::VARCHAR(255), $14::VARCHAR(255)) RETURNING *
   `, queryParams)
   .then(res => {
-    console.log(res.rows)
     return res.rows[0];
   })
 }
